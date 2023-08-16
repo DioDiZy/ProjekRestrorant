@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, idevice-widthnitial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/7d85f44b32.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <nav class="navbar-container">
+          <div class="logo">
+            <h1>EatAndHealth</h1>
+          </div>
+          <div class="hamburger" onclick="togglemenu()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <div class="navbar-list" id="navbar-list">
+            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#price">Price</a>
+            <a class="nav-item" href="#our-chef">Our Chef</a>
+            <a class="nav-item" href="#protein">Makanan</a>
+          </div>
+          <div class="button-container" id="button-nav">
+            <a class="log-in" href="">Login</a>
+            <a class="sign-up" href="">Sign Up</a>
+          </div>
+        </nav>
+      </div>
+      <section class="jumbotron" id="home">
+        <div class="container">
+          <div class="contentBx">
+            <div class="text">
+              <h1>Your Good Food Is</h1>
+              <h1>Healthy food</h1>
+              <p style="margin-top: 10px">Look for healthy foods to maintain your health, want to know what foods are healthy for your body,</p>
+              <p>click the button to find out!</p>
+            </div>
+            <div class="buttoncontainer">
+              <a href="" class="start">Get Start</a>
+            </div>
+            <div class="image-container">
+              <img src="/assets/img/breakfast.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="bg-pemisah"></div>
+    </header>
+
+    <!-- <svg style="background: #4fbf60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1" d="M0,288L120,250.7C240,213,480,139,720,122.7C960,107,1200,149,1320,170.7L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+    </svg> -->
+    <!-- trusted-by -->
+    <section class="trusted-by" id="trusted-by">
+      <div class="container">
+        <div class="contentBx">
+          <div class="text">
+            <h1>Trusted By</h1>
+          </div>
+          <div class="image-container">
+            <img src="/assets/img/halal.jpeg" alt="halal" />
+            <img src="/assets/img/foodcircle.jpeg" alt="foodcircle" />
+            <img src="/assets/img/fastfood.jpeg" alt="foodcircle" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- price -->
+    <section class="our-chef" id="our-chef">
+      <div class="container">
+        <div class="judul">
+          <h1>Our Recomended Chef</h1>
+        </div>
+        <div class="contentBx">
+          <div class="card">
+            <div class="logo">
+              <img src="/assets/img/foto-dio2.JPG" alt="" />
+            </div>
+            <div class="content">
+              <div class="gambar">
+                <img src="/assets/img/foto-dio2.JPG" alt="" />
+                <div class="text">
+                  <p>Dio Syahputra</p>
+                  <small style="color: #989998">Chicken Cooking</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="logo">
+              <img src="/assets/img/foto-dio2.JPG" alt="" />
+            </div>
+            <div class="content">
+              <div class="gambar">
+                <img src="/assets/img/foto-dio2.JPG" alt="" />
+                <div class="text">
+                  <p>Dio Syahputra</p>
+                  <small style="color: #989998">Chicken Cooking</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="logo">
+              <img src="/assets/img/foto-dio2.JPG" alt="" />
+            </div>
+            <div class="content">
+              <div class="gambar">
+                <img src="/assets/img/foto-dio2.JPG" alt="" />
+                <div class="text">
+                  <p>Dio Syahputra</p>
+                  <small style="color: #989998">Chicken Cooking</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="protein" id="protein">
+      <div class="judul">
+        <h1>Rekomendasi Makanan</h1>
+        <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nulla porro ea. Explicabo consectetur omnis ea eaque minima cumque vel?</small>
+      </div>
+      <div class="container">
+        <div class="contentBx">
+          <div class="card" style="--warna: #e9222c">
+            <div class="imageBx">
+              <img src="/assets/img/Semangka.png" alt="Semangka" />
+            </div>
+            <div class="text">
+              <h1 style="color: #e9222c">Semangka</h1>
+              <p>Semangka adalah buah yang memiliki banyak protein,buah ini sangat direkomendasikan bagi kamu yang ini memakanan makanan yang tinggi dengan protein</p>
+            </div>
+            <div class="proggres-container">
+              <progress style="--background: #e9222c" id="proggres-food" value="90" max="100"></progress>
+            </div>
+          </div>
+          <div class="card" style="--warna: #945636">
+            <div class="imageBx">
+              <img src="/assets/img/Roti.png" alt="Roti" />
+            </div>
+            <div class="text">
+              <h1 style="color: #945636">Roti</h1>
+              <p>Roti adalah makanan berbahan dasar utama tepung terigu dan air, yang difermentasikan dengan ragi, tetapi ada juga yang tidak menggunakan ragi.</p>
+            </div>
+            <div class="proggres-container">
+              <progress style="--background: #945636" id="proggres-food" value="70" max="100"></progress>
+            </div>
+          </div>
+          <div class="card" style="--warna: #b96b43">
+            <div class="imageBx">
+              <img src="/assets/img/Ayam.png" alt="Ayam" />
+            </div>
+            <div class="text">
+              <h1 style="color: #b96b43">Ayam</h1>
+              <p>Daging ayam adalah merupakan salah satu makanan hewani yang paling umum dikonsumsi. Daging ayam dikenal sebagai sumber protein yang baik.</p>
+            </div>
+
+            <div class="proggres-container">
+              <progress style="--background: #b96b43" id="proggres-food" value="60" max="100"></progress>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="bg-pemisah2"></div>
+    <section class="card-info" id="customer">
+      <div class="container">
+        <div class="contentBx">
+          <div class="info">
+            <h2>20K</h2>
+            <small>Lorem ipsum dolor sit amet.</small>
+          </div>
+          <div class="info">
+            <h2>109+</h2>
+            <small>Lorem ipsum dolor sit amet.</small>
+          </div>
+          <div class="info">
+            <h2>50+</h2>
+            <small>Lorem ipsum dolor sit amet.</small>
+          </div>
+          <div class="info">
+            <h2>20+</h2>
+            <small>Lorem ipsum dolor sit amet.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="price" id="price">
+      <div class="container">
+        <div class="text">
+          <h1>Our Recomended Menu</h1>
+          <p style="color: rgb(79, 191, 96)">Choose One !</p>
+        </div>
+        <div class="contentBx">
+          <div class="card" style="--warna: #2f506b">
+            <div class="logo">
+              <img src="/assets/img/food1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h1 style="color: var(--warna)">Anggur</h1>
+              <small>Rp:20.000</small>
+
+              <div class="button-container">
+                <a href=""><i class="fa fa-cart-plus"></i> Order</a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="--warna: #ed3028">
+            <div class="logo">
+              <img src="/assets/img/food2.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h1 style="color: var(--warna)">Strawberry</h1>
+              <small>Rp:20.000</small>
+
+              <div class="button-container">
+                <a href=""><i class="fa fa-cart-plus"></i> Order</a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="--warna: #a8634b">
+            <div class="logo">
+              <img src="/assets/img/food3.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h1 style="color: var(--warna)">Kacang</h1>
+              <small>Rp:20.000</small>
+
+              <div class="button-container">
+                <a href=""><i class="fa fa-cart-plus"></i> Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    var navbar = document.querySelector(".navbar-container");
+    var btnlogin = document.querySelector(".log-in");
+    var btnSignup = document.querySelector(".sign-up");
+
+    window.addEventListener("scroll", function () {
+      if (window.pageYOffset > 0) {
+        navbar.classList.add("navbar-scrolled");
+        btnlogin.classList.add("button-scrolled");
+        btnSignup.classList.add("button-scrolled");
+      } else {
+        navbar.classList.remove("navbar-scrolled");
+        btnlogin.classList.remove("button-scrolled");
+        btnSignup.classList.remove("button-scrolled");
+      }
+    });
+    function togglemenu() {
+      var menu = document.getElementById("navbar-list");
+      var button = document.getElementById("button-nav");
+      if (menu.style.display === "flex") {
+        menu.style.display = "none";
+        button.style.display = "none";
+      } else {
+        menu.style.display = "flex";
+        button.style.display = "flex";
+      }
+    }
+  </script>
+</html>

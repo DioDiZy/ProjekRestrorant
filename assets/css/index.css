@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Readex+Pro:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+}
+header {
+  background: #4fbf60;
+}
+.navbar {
+  width: 100%;
+  height: 10vh;
+  padding: 10px;
+}
+.navbar .navbar-container {
+  width: 100%;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  position: fixed;
+  transition: all 0.5s;
+}
+.hamburger {
+  padding-left: 150px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: none;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+/* navbar scrolled */
+.navbar .navbar-scrolled {
+  transition: all 0.5s;
+  width: 100%;
+
+  padding: 5px 0;
+
+  background: rgba(79, 191, 96, 0.8);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+/* akhir navbar scrolled */
+.navbar .navbar-container .logo {
+  width: 40%;
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-size: 25px;
+}
+.navbar .navbar-container .navbar-list {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.navbar .navbar-container .navbar-list a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .navbar-container .navbar-list a::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 5px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.navbar .navbar-container .navbar-list a:hover::before {
+  transform: scaleX(1);
+}
+.navbar .navbar-container .navbar-list a:hover {
+  color: black;
+}
+
+.navbar .navbar-container .button-container {
+  display: flex;
+  width: 20%;
+  justify-content: space-evenly;
+}
+.button-container a {
+  text-decoration: none;
+  padding: 0;
+}
+.button-container .log-in {
+  border-radius: 5px;
+  background: #007984;
+  color: white;
+  padding: 0px 15px;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+}
+.button-container .no-scrolled {
+}
+
+/* button scrolled */
+.button-container .button-scrolled {
+  transition: all 0.5s;
+  padding: 15px 15px;
+}
+/* Akhir button scrolled */
+.button-container .log-in:hover {
+  border: 1px solid #007984;
+  background: none;
+  color: white;
+  transition: 0.2s;
+}
+.button-container .log-in:active {
+  background: #007984;
+}
+.button-container .sign-up {
+  border-radius: 5px;
+  background: #fff;
+  color: #009286;
+  padding: 0px 10px;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+}
+.button-container .sign-up:hover {
+  border: 1px solid #fff;
+  background: none;
+  color: white;
+  transition: 0.2s;
+}
+.button-container .sign-up:active {
+  background: #fff;
+}
+.navbar .navbar-container ul li {
+  list-style: none;
+}
+/* Jumbotron */
+.jumbotron {
+  width: 100%;
+  height: 50vh;
+}
+.jumbotron .container {
+  width: 100%;
+}
+.jumbotron .container .contentBx {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.jumbotron .container .contentBx .text {
+  color: white;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.jumbotron .container .contentBx .buttoncontainer {
+  margin: 20px;
+}
+
+.jumbotron .container .contentBx .buttoncontainer a {
+  text-decoration: none;
+  margin-top: 10px;
+  color: black;
+}
+.jumbotron .container .contentBx .buttoncontainer .start {
+  width: 50px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.jumbotron .container .contentBx .buttoncontainer .start:hover {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.jumbotron .container .contentBx .image-container {
+  margin-top: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.jumbotron .container .contentBx .image-container img {
+  width: 80%;
+}
+/* trusted by */
+.trusted-by {
+  width: 100%;
+  background: #fff;
+}
+.trusted-by .container {
+  width: 100%;
+  height: 50vh;
+}
+.trusted-by .container .contentBx {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trusted-by .container .contentBx .image-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.trusted-by .container .contentBx .image-container img {
+  width: 10%;
+}
+.trusted-by .container .contentBx .text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+/* our-chef */
+.our-chef {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/img/bg-price.svg");
+  background-position: bottom center;
+  background-repeat: repeat-x;
+
+  background-size: 100% auto;
+}
+.our-chef .container {
+  width: 90%;
+  margin: auto;
+}
+.our-chef .container .judul {
+  text-align: center;
+  margin: 20px;
+}
+
+.our-chef .container .contentBx {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.our-chef .container .contentBx .card {
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 5px 5px 11px #bababa;
+  margin-top: 1rem;
+}
+.our-chef .container .contentBx .card .logo {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+.our-chef .container .contentBx .card .logo img {
+  border-radius: 8px;
+  width: 100%;
+}
+.our-chef .container .contentBx .card .content {
+  width: 100%;
+  display: flex;
+}
+.our-chef .container .contentBx .card .content .gambar {
+  width: 100%;
+  margin: 20px 0px 20px 20px;
+  display: flex;
+  flex-direction: row;
+}
+.our-chef .container .contentBx .card .content .gambar .text {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.our-chef .container .contentBx .card .content .gambar img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.our-chef .container .contentBx .card .content .text {
+  width: 60%;
+  margin: 0 0 0 5px;
+}
+/* price */
+.price {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/img/bg-price.svg");
+  background-position: bottom center;
+  background-repeat: repeat-x;
+
+  background-size: 100% auto;
+}
+.price .container {
+  width: 90%;
+  margin: auto;
+}
+.price .container .text {
+  text-align: center;
+}
+.bg-pemisah {
+  background-image: url("/assets/img/bg-atas.svg");
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  height: 50vh;
+  background-size: 100% auto;
+  content: "";
+}
+
+.price .container .contentBx {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.price .container .contentBx .card {
+  width: 30%;
+  border-radius: 28px;
+  box-shadow: 9px 9px 18px #b3b3b3, -9px -9px 18px #ffffff;
+  margin-top: 1rem;
+}
+.price .container .contentBx .card .logo {
+  width: 100%;
+  overflow: hidden;
+  border: 1 px solid var(--warna);
+  border-radius: 8px;
+}
+.price .container .contentBx .card .logo img {
+  width: 100%;
+  transform: scale(1.1); /* skala gambar normal */
+  transition: transform 0.5s; /* 0.5 detik untuk transisi */
+}
+.price .container .contentBx .card .logo img:hover {
+  transform: scale(1.2);
+}
+
+.price .container .contentBx .card .content {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price .container .contentBx .card .content .button-container {
+  width: 100%;
+  display: flex;
+  margin: 7px;
+  justify-content: center;
+}
+.price .container .contentBx .card .content .button-container a {
+  border-radius: 5px;
+  border: 1px solid var(--warna);
+  color: black;
+  padding: 10px;
+  transition: 0.2s;
+}
+.price .container .contentBx .card .content .button-container a:hover {
+  background: var(--warna);
+  color: white;
+}
+/* protein */
+.protein {
+  width: 100%;
+  background: #4fbf60;
+  height: 80vh;
+}
+.protein .container {
+  width: 90%;
+
+  display: flex;
+  margin: auto;
+  border-radius: 18px;
+}
+.protein .judul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  color: white;
+  height: 20vh;
+  margin: auto;
+  text-align: center;
+}
+.protein .judul h1 {
+}
+.protein .container .contentBx {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.protein .container .contentBx .card {
+  width: 30%;
+  height: 50vh;
+  display: flex;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  background-color: white;
+  margin: 30px 0 30px 0;
+  border-bottom: 3px solid var(--warna);
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.protein .container .contentBx .card:hover {
+  transform: scale(1.1);
+  width: 31%;
+}
+
+.protein .container .contentBx .card .imageBx {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+.protein .container .contentBx .card .imageBx img {
+  width: 30%;
+  margin: 30px 0 0 0;
+}
+.protein .container .contentBx .card .text {
+  margin-top: 30px;
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+}
+.protein .container .contentBx .card .text p {
+  margin-top: 10px;
+}
+.protein .container .contentBx .card .proggres-container {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+#proggres-food {
+  width: 90%; /* or any desired width */
+  height: 20px; /* or any desired height */
+  background-color: #ddd;
+  border-radius: 10px;
+  position: relative;
+}
+
+#proggres-food::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+#proggres-food::-webkit-progress-value {
+  background-color: var(--background);
+  border-radius: 10px;
+}
+#proggres-food::before {
+  content: "Protein";
+  position: absolute;
+
+  left: 10%;
+  transform: translate(-50%, -100%);
+  font-size: 14px;
+}
+#proggres-food::after {
+  content: attr(value) "%";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: white;
+}
+.bg-pemisah2 {
+  width: 100%;
+  height: 70vh;
+  background-image: url("/assets/img/wave.svg");
+  background-position: top center;
+  background-repeat: repeat-x;
+  background-size: 100% auto;
+  content: "";
+}
+.card-info {
+  width: 100%;
+  height: 50vh;
+}
+.card-info .container {
+  width: 80%;
+  margin: auto;
+}
+.card-info .container .contentBx {
+  width: 100%;
+  box-shadow: -7px -7px 0px #012a1f;
+  background: #00aa79;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px 10px 20px 10px;
+}
+.card-info .container .contentBx .info {
+  width: 20%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.card-info .container .contentBx .info h2 {
+  font-size: 40px;
+}
+/* Responsive */
+/* Large Screen */
+@media screen and (max-width: 1200px) {
+}
+/* Laptop */
+@media screen and (max-width: 992px) {
+}
+/* Tablet */
+@media screen and (max-width: 768px) {
+}
+/* Handphone */
+@media screen and (max-width: 600px) {
+  .jumbotron .container .contentBx .image-container {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar .navbar-container {
+    transition: 0.5s;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 5px 0px;
+  }
+  .navbar .navbar-container .navbar-list {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    background: #4fbf60;
+  }
+  .nav-item {
+    margin: 10px 0;
+  }
+  .navbar .navbar-container .button-container {
+    width: 100%;
+    justify-content: center;
+    display: none;
+    align-items: center;
+    background: #4fbf60;
+  }
+  .button-container .log-in,
+  .button-container .sign-up {
+    margin: 10px 15px;
+    padding: 10px 10px;
+  }
+  .hamburger .line {
+    display: block;
+  }
+  .navbar .navbar-container .logo {
+    font-size: 15px;
+  }
+  .trusted-by .container .contentBx .image-container img {
+    width: 20%;
+  }
+  .our-chef .container .contentBx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .our-chef {
+    height: 190vh;
+  }
+  .our-chef .container .contentBx .card {
+    width: 100%;
+  }
+  .bg-pemisah2 {
+    margin: -5px 0;
+    height: 50vh;
+  }
+  .card-info {
+    height: 80vh;
+  }
+  .card-info .container {
+    width: 100%;
+  }
+  .card-info .container .contentBx {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .card-info .container .contentBx .info {
+    width: 100%;
+  }
+  .protein {
+    height: 180vh;
+  }
+  .protein .judul {
+    margin: -5px;
+    width: 100%;
+  }
+  .protein .judul small {
+    margin: 15px 0;
+  }
+
+  .protein .container .contentBx .card {
+    width: 100%;
+  }
+  .protein .container .contentBx .card:hover {
+    transform: scale(1.1);
+    width: 101%;
+  }
+  .price {
+    height: 158vh;
+  }
+  .price .container .contentBx {
+    display: flex;
+    flex-direction: column;
+  }
+  .price .container .contentBx .card {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
